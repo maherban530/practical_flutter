@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 import '../../Task2/View/design_strip_view.dart';
 import '../../test_scroll.dart';
-import 'dashboard_view.dart';
 
 class CustomTabView extends StatefulWidget {
   const CustomTabView({

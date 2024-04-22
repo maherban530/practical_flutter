@@ -77,7 +77,7 @@ class _DashboardViewState extends State<DashboardView> {
                       ),
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
-                        controller: dashboardController.controllerHorizontal,
+                        // controller: dashboardController.controllerHorizontal,
                         child: Row(
                           children: [
                             ...List.generate(
@@ -116,35 +116,6 @@ class _DashboardViewState extends State<DashboardView> {
                                       ),
                                     ),
                                   ],
-                                ),
-                              ),
-                            ),
-                            Obx(
-                              () => Visibility(
-                                visible: dashboardController
-                                        .isLoadingMoreProd.value ==
-                                    true,
-                                child: const Padding(
-                                  padding: EdgeInsets.only(top: 10, bottom: 40),
-                                  child: Center(
-                                      child: CircularProgressIndicator()),
-                                ),
-                              ),
-                            ),
-                            Obx(
-                              () => Visibility(
-                                visible:
-                                    dashboardController.hasNextPageProd.value ==
-                                        false,
-                                child: Container(
-                                  padding: const EdgeInsets.only(
-                                      top: 20, bottom: 20),
-                                  child: const Center(
-                                    child: Text(
-                                        'You have fetched all of the products',
-                                        style: TextStyle(
-                                            color: Colors.grey, fontSize: 12)),
-                                  ),
                                 ),
                               ),
                             ),
